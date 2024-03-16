@@ -1,0 +1,1 @@
+# Vorstellen eines konkreten Algorithmus
