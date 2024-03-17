@@ -4,6 +4,9 @@ Wie kommt man von einem array bzw. einer linked list zu einem binary
 search tree?
 
 1. Vorwissen aus der Informatik und Mathematik.
+   - Array
+   - Linked List
+   - Binary Search
 2. Zielsetzungen und was man damit bewirken will.
 3. Rätsel, Aufgaben, Beispiele, Projekte, Lernaufgaben.
 4. Arbeitsblätter für die Klasse mit verständlichen Aufträgen (Rätsel, Aufgaben).
