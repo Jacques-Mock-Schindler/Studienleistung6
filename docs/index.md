@@ -16,8 +16,12 @@ search tree?
 2. Zielsetzungen und was man damit bewirken will.  
    Die Unterrichtseinheit soll zeigen, dass es Datenstrukturen gibt, die
    gegenüber den linearen Datenstrukturen *Array* und *Linked List*
-   Effizienzgewinne ermöglichen.
-3. Rätsel, Aufgaben, Beispiele, Projekte, Lernaufgaben.
+   Effizienzgewinne ermöglichen.  
+
+3. Rätsel, Aufgaben, Beispiele, Projekte, Lernaufgaben.  
+   Wie kann man Daten organisieren, dass man sowohl effizient suchen wie
+   auch effizient Daten einfügen und entfernen kann?  
+   Lernen durch Fehlannahmen
 4. Arbeitsblätter für die Klasse mit verständlichen Aufträgen (Rätsel, Aufgaben).
 5. Lösungen, die auch für die Klasse verständlich sind und die den
    Lösungsweg beschreiben und allfällige Erklärungen enthalten. 
