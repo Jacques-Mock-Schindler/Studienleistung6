@@ -11,7 +11,7 @@ search tree?
    Mit diesen Vorkenntnissen geht die Annahme einher, dass man bei der
    Wahl einer Datenstruktur entweder effizient nach Schlüsseln suchen
    kann oder effizient Elemente in die Datenstruktur einfügen oder
-   entfernen kann aber nicht beides.
+   entfernen kann, aber nicht beides.
    
 2. Zielsetzungen und was man damit bewirken will.
 3. Rätsel, Aufgaben, Beispiele, Projekte, Lernaufgaben.
