@@ -22,6 +22,8 @@ search tree?
    Wie kann man Daten organisieren, dass man sowohl effizient suchen wie
    auch effizient Daten einfügen und entfernen kann?  
    Lernen durch Fehlannahmen
+   - Worst Case Baumstruktur
+   - optimale Baumstruktur
 4. Arbeitsblätter für die Klasse mit verständlichen Aufträgen (Rätsel, Aufgaben).
 5. Lösungen, die auch für die Klasse verständlich sind und die den
    Lösungsweg beschreiben und allfällige Erklärungen enthalten. 
