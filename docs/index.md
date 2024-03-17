@@ -13,7 +13,10 @@ search tree?
    kann oder effizient Elemente in die Datenstruktur einfügen oder
    entfernen kann, aber nicht beides.
    
-2. Zielsetzungen und was man damit bewirken will.
+2. Zielsetzungen und was man damit bewirken will.  
+   Die Unterrichtseinheit soll zeigen, dass es Datenstrukturen gibt, die
+   gegenüber den linearen Datenstrukturen *Array* und *Linked List*
+   Effizienzgewinne ermöglichen.
 3. Rätsel, Aufgaben, Beispiele, Projekte, Lernaufgaben.
 4. Arbeitsblätter für die Klasse mit verständlichen Aufträgen (Rätsel, Aufgaben).
 5. Lösungen, die auch für die Klasse verständlich sind und die den
