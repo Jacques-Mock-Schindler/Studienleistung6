@@ -11,6 +11,7 @@
 !*.yml
 !*.png
 !*.svg
+!*.tex
 !*.drawio
 !docs/_layouts/default.html
 # unabhängig davon, wo sie sich befinden
