@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+\title{Binäre Suche in mathematischer Notation}
+\author{Autor Name}
+\date{\today}
+
+\maketitle
+
+\section{Binäre Suche}
+
+Die Funktion \textit{BinarySearch} wird definiert als:
+
+\[
+\text{BinarySearch}(A, x, \text{low}, \text{high}) = 
+\begin{cases} 
+-1 & \text{if } \text{high} < \text{low} \\
+\text{mid} & \text{if } A[\text{mid}] = x \\
+\text{BinarySearch}(A, x, \text{low}, \text{mid} - 1) & \text{if } x < A[\text{mid}] \\
+\text{BinarySearch}(A, x, \text{mid} + 1, \text{high}) & \text{if } x > A[\text{mid}]
+\end{cases}
+\]
+
+Hierbei ist \textit{A} ein sortiertes Array, \textit{x} der gesuchte Wert, \textit{low} der Anfangsindex und \textit{high} der Endindex des Suchbereichs. Der Index \textit{mid} wird als $\lfloor (\text{low} + \text{high}) / 2 \rfloor$ berechnet.
+
+\end{document}
