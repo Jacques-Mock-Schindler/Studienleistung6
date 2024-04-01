@@ -8,7 +8,10 @@ Werten gegenüber einer linearen Suche optimiert werden?
    Listen als dynamische Arrays vertraut. Ausserdem kennen Sie
    Sortierverfahren wie Selection Sort und Merge Sort.  
    Für die Auseinandersetzung mit Merge Sort haben die SuS auch eine
-   Einführung in die rekursive Programmierung erhalten.  
+   Einführung in die rekursive Programmierung erhalten. Dabei haben Sie
+   als Vorbereitung insbesondere auch gelernt, mathematisch formal
+   dargestellte rekursive Lösungen als Funktionen in Python zu
+   implementieren.    
    Darüber hinaus gehe ich davon aus, dass die SuS wissen, was der
    Logarithmus ist.
 
