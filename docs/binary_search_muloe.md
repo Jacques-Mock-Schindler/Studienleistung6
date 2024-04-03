@@ -6,7 +6,17 @@ date: 2. April 24
 lang: de-Ch
 ---
 
-# Binary Search
+## Vorbereitungen
+
+Als Vorbereitung für die Aufgaben in diesem Arbeitsblatt wird in der
+folgenden Zelle die erforderliche Python Library `random` geladen.
+
+
+```python
+import random
+```
+
+# Binary Searech
 
 In diesem Notzibuch sollen zwei Suchalgorithmen einander gegenüber
 gestellt werden.
@@ -15,19 +25,17 @@ gestellt werden.
 
 Gegeben sei eine Python Liste mit 16 Werten in beliebiger Reihenfolge.
 Gesucht ist ein Verfahren, mit dem überprüft werden kann, ob ein
-beliebiger Wert in dieser Python Liste vorkommt und wenn ja, an welcher
-Stelle in der Python Liste.
+beliebiger Wert in dieser Python Liste vorkommt und wenn ja, mit welchem
+Index. 
 
 Die einfachste Lösung für dieses Problem ist es, ein Element nach dem
 anderen auf seine Übereinstimmung mit dem gesuchten Wert zu überprüfen.
 Wird das Element gefunden, wird der Index zurückgegeben, wird das
 Element nicht gefunden -1.  
-Das hier beschriebene Vorgehen ist die lineare Suche.  
+Das hier beschriebene Vorgehen heisst lineare Suche.  
 
-
-```python
-import random
-```
+In der Folge soll mit der hier gegebenen Python Liste `sequenz`
+gearbeitet werden.  
 
 
 ```python
@@ -35,9 +43,7 @@ sequenz = [17, 35, 42, 24, 21, 36, 75, 34, 12, 35, 23, 69, 34, 28,
            86, 98]
 ```
 
-### Implementierung der linearen Suche
-
-#### Aufgabe
+### Aufgabe zur Implementierung der linearen Suche
 
 Implementieren Sie in der folgenden Zelle die lineare Suche als Funktion
 in Python.  
@@ -68,12 +74,10 @@ print(linear_search(sequenz, 98))
 print(linear_search(sequenz, 100))
 ```
 
-### Effizienz der linearen Suche
+### Aufgabe 1 zur Effizienz der linearen Suche
 
 Mit den folgenden Aufgaben soll aufgezeigt werden, wie es um die
 Effizienz der linearen Suche steht.
-
-#### Aufgabe
 
 Die Python Liste `sequenz` beinhaltet 16 zufällig gewählte natürliche
 Zahlen von 1 bis 100.  
@@ -101,7 +105,7 @@ for x in search_values:
 print(sum(searches)/len(searches))
 ```
 
-#### Aufgabe
+### Aufgabe 2 zur Effizienz der linearen Suche
 
 Wählen Sie zufällig 100 natürliche Zahlen von 1 bis 100 und 
 suchen Sie mit Hilfe einer Schlaufe in `sequenz` nach diesen zufällig
@@ -127,7 +131,7 @@ for x in search_values_100:
 print(sum(searches_100)/len(searches_100))
 ```
 
-#### Besprechung der Resultate
+### Besprechung der Resultate
 
 Die erste Aufgabe scheint ein Resultat in der Nähe von 8 zu liefern, die
 zweite eines von etwas mehr als 14. Woran liegt das?
@@ -137,7 +141,7 @@ hat jede Position die Wahrscheinlichkeit von $\frac{1}{16}$. Es sind also
 $\frac{8}{16}$ mit weniger als 8 Vergleichen und $\frac{8}{16}$ mit mehr
 als 8 vergleichen. Damit kommen wir im Mittel auf 8 Vergleiche.  
 
-Wenn jedoch eine eine Zahl von 1 bis 100 gewählt wird, ist die Chance,
+Wenn jedoch eine Zahl von 1 bis 100 gewählt wird, ist die Chance,
 dass sich die Zahl in der Python Liste `sequenz` findet, nur
 $\frac{16}{100}$. $\frac{84}{100}$ mögliche Werte
 liegen ausserhalb der Pyhton Liste `sequenz`. Damit werden in
@@ -185,7 +189,8 @@ sequenz_sortiert.sort()
 ### Aufgabe
 
 Wie kann mit möglichst wenigen Vergleichen überprüft werden, ob ein Wert
-im Bereich der Python Liste `sequenz_sortiert` liegt? 
+im Bereich der Python Liste `sequenz_sortiert` liegt?  
+Überprüfen Sie Ihre Implementation mit den Werten 10, 12, 98 und 100.
 
 
 ```python
@@ -239,12 +244,13 @@ berechnet.
 ### Aufgabe
 
 Implementieren Sie die binäre Suche als Funktion in Python so, wie sie mathematisch formal
-dargestellt worden ist.
+dargestellt worden ist.  
+Überprüfen Sie auch diese Implementation mit den Werten 10, 12, 98 und 100.
 
 
 ```python
 def binary_search(seq, x, lo=0, hi=None):
-    if hi == None:
+    if hi is None:
         hi = len(seq) - 1
         
     mid = (lo + hi) // 2
@@ -334,7 +340,7 @@ Elementen im Maximum 4 Vergleiche und bei einer solchen mit 32 Elementen
 
 5 ist gleich $log_2(16) + 1$. Es scheint, als brauche es im Maximum $log_2(n) + 1$ Vergleiche.
 
-### Diskussion des Resultates
+### Induktive Herleitung des Resultates
 
 Mit der binären Suche soll in einer aufsteigend sortierten Sequenz der
 Länge $n$ ein besetimmtes Element gefunden werden.
@@ -344,7 +350,7 @@ Die Suche nach dem Element beginnt in der Mitte der gegebenen Sequenz.
 Falls das gesuchte Element mit dem Element in der Mitte der Sequenz
 übereinstimmt, wurde das gesuchte Element gefunden und die Suche endet.  
 Ist das gesuchte Element kleiner als das mittlere Element, muss das
-gesuchte Element - sofern es in der Sequenz vorkommt - in der linken
+gesuchte Element in der linken
 Hälfte gesucht werden. Ist das gesuchte Element grösser als das mittlere
 Element, muss in der rechten Hälfte weitergesucht werden. In beiden
 Fällen reduziert sich das Problem auf die Hälfte seiner ursprünglichen
@@ -352,7 +358,7 @@ Grösse.
 
 Das Problem wird bei jedem Vergleich halbiert, bis entweder das gesuchte
 Element gefunden worden ist, oder kein Element zum vergleichen mehr
-übrig ist. Im schlimmsten Fall sind $log_2(n) + 1$ Schritte erforderlich
+übrig ist. Im schlimmsten Fall sind $log_2(n) + 1$ Schritte erforderlich,
 um festzustellen, dass das gesuchte Element in der gegebenen Sequenz
 nicht vorkommt.  
 

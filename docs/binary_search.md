@@ -23,7 +23,9 @@ Werten gegenüber einer linearen Suche optimiert werden?
 3. Rätsel, Aufgaben, Beispiele, Projekte, Lernaufgaben.  
    Ausgehend von der linearen Suche in einer unsortierten Python Liste
    wird in einem stark strukturierten Lehrgespräch auf den Algorithmus
-   der binären Suche hingearbeitet.
+   der binären Suche hingearbeitet. Insbesondere die jeweiligen
+   Betrachtungen zur Effizienz der linearen bzw. binären Suche sind im
+   Lehrgespräch zu entwickeln.
 
 4. Arbeitsblätter für die Klasse mit verständlichen Aufträgen (Rätsel,
    Aufgaben).  
