@@ -2,7 +2,7 @@
 title: Studienleistung 6
 subtitle: Fachdidaktik 2 Frühlingssemester 24 GymInf
 author: Jacques Mock Schindler
-date: 2. April 24
+date: 3. April 24
 lang: de-Ch
 ---
 
@@ -23,6 +23,14 @@ gestellt werden.
 
 ## Lineare Suche
 
+*Kommentar für die Lehrperson*  
+Für die Einführung in die lineare Suche soll in einem gut gemischten
+Spiel Jasskarten eine bestimmte Karte gesucht werden. Die Schülerinnen
+und Schüler (SuS) sollen in Partnerarbeit diskutieren, wie viele Karten
+Sie im durchschnitt und im schlechtesten Fall vom verdeckt aufliegenden
+Stapel nehmen müssen, bis die gesuchte Karte gefunden wird.
+
+*Ausgangslage für die Implementation*  
 Gegeben sei eine Python Liste mit 16 Werten in beliebiger Reihenfolge.
 Gesucht ist ein Verfahren, mit dem überprüft werden kann, ob ein
 beliebiger Wert in dieser Python Liste vorkommt und wenn ja, mit welchem
@@ -167,6 +175,13 @@ welches auch im schlimmsten Fall weniger Vergleiche erfordert. Ein
 solches Verfahren ist die binäre Suche.
 
 ## Binäre Suche
+
+*Kommentar für die Lehrperson*  
+Das Suchbeispiel mit den Jasskarten kann mit einem sortierten Spiel
+fortgesetzt werden. Die SuS sollen in einer Gruppe diskutieren, wie am
+effizientesten nach einer Bestimmten Karte in einem sortierten Spiel
+gesucht wird. Vor dem Hintergrund der Besprechung der gewonnenen
+Erkenntnisse können dann die folgenden Aufgaben gelöst werden.
 
 Eine erste Verbesserung der Effizienz der Suche ergibt sich, wenn die zu
 durchsuchende Sequenz in aufsteigender Reihenfolge sortiert ist. In der
