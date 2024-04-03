@@ -31,11 +31,11 @@ Werten gegenüber einer linearen Suche optimiert werden?
    Aufgaben).  
    Für die SuS wird ein Jupyter Notebook mit den Aufgaben zur Verfügung
    gestellt. 
-5. Lösungen, die auch für die Klasse verständlich sind und die den
+5. Lösungen, die auch für die Klasse verständlich sind, und die den
    Lösungsweg beschreiben und allfällige Erklärungen enthalten.  
    Die Musterlösung wird für die SuS ebenfalls in einem Jupyter Notebook
    zur Verfügung gestellt.
 6. Fazit: was man glaubt, erreicht zu haben.  
-   Nach dieser Unterrichtssequenz kennen die SuS einen neuen gegenüber
-   der linearen Suche effizienteren Suchalgorithmus. Ausserdem lernen
+   Nach dieser Unterrichtssequenz kennen die SuS einen neuen, gegenüber
+   der linearen Suche effizienteren, Suchalgorithmus. Ausserdem lernen
    die SuS die Folgen unterschiedlicher Wachstumsraten kennen.
