@@ -1,0 +1,10 @@
+theme: jekyll-theme-slate
+
+title: Binary Search
+subtitle: Studienleistung 6, Fachdidaktik, 2 GymInf
+description: ' ' 
+
+includes_dir     : ./_includes
+layouts_dir:  ./_layouts
+plugins:
+  - jemoji
