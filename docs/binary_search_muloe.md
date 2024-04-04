@@ -1,10 +1,6 @@
----
-title: Studienleistung 6
-subtitle: Fachdidaktik 2 Frühlingssemester 24 GymInf
-author: Jacques Mock Schindler
-date: 3. April 24
-lang: de-Ch
----
+<a target="_blank" href="https://colab.research.google.com/github/Jacques-Mock-Schindler/Studienleistung6/blob/main/docs/binary_search_muloe.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ## Vorbereitungen
 
@@ -16,7 +12,7 @@ folgenden Zelle die erforderliche Python Library `random` geladen.
 import random
 ```
 
-# Binary Searech
+# Binary Search
 
 In diesem Notzibuch sollen zwei Suchalgorithmen einander gegenüber
 gestellt werden.
@@ -27,7 +23,7 @@ gestellt werden.
 Für die Einführung in die lineare Suche soll in einem gut gemischten
 Spiel Jasskarten eine bestimmte Karte gesucht werden. Die Schülerinnen
 und Schüler (SuS) sollen in Partnerarbeit diskutieren, wie viele Karten
-Sie im durchschnitt und im schlechtesten Fall vom verdeckt aufliegenden
+Sie im Durchschnitt und im schlechtesten Fall vom verdeckt aufliegenden
 Stapel nehmen müssen, bis die gesuchte Karte gefunden wird.
 
 *Ausgangslage für die Implementation*  
@@ -38,7 +34,7 @@ Index.
 
 Die einfachste Lösung für dieses Problem ist es, ein Element nach dem
 anderen auf seine Übereinstimmung mit dem gesuchten Wert zu überprüfen.
-Wird das Element gefunden, wird der Index zurückgegeben, wird das
+Wird das Element gefunden, wird der Index zurückgegeben; wird das
 Element nicht gefunden -1.  
 Das hier beschriebene Vorgehen heisst lineare Suche.  
 
@@ -115,7 +111,8 @@ print(sum(searches)/len(searches))
 
 ### Aufgabe 2 zur Effizienz der linearen Suche
 
-Wählen Sie zufällig 100 natürliche Zahlen von 1 bis 100 und 
+Wählen Sie zufällig 100 natürliche Zahlen aus den Zahlen von 1 bis 100
+(ziehen mit Zurücklegen) und 
 suchen Sie mit Hilfe einer Schlaufe in `sequenz` nach diesen zufällig
 gewählten Zahlen.   
 Wie viele Vergleiche müssen Sie jetzt im Durchschnitt über diese 100
@@ -147,7 +144,7 @@ zweite eines von etwas mehr als 14. Woran liegt das?
 Wenn wir eine Zahl zufällig aus der Python Liste `sequenz` auswählen,
 hat jede Position die Wahrscheinlichkeit von $\frac{1}{16}$. Es sind also
 $\frac{8}{16}$ mit weniger als 8 Vergleichen und $\frac{8}{16}$ mit mehr
-als 8 vergleichen. Damit kommen wir im Mittel auf 8 Vergleiche.  
+als 8 Vergleichen. Damit kommen wir im Mittel auf 8 Vergleiche.  
 
 Wenn jedoch eine Zahl von 1 bis 100 gewählt wird, ist die Chance,
 dass sich die Zahl in der Python Liste `sequenz` findet, nur
@@ -179,7 +176,7 @@ solches Verfahren ist die binäre Suche.
 *Kommentar für die Lehrperson*  
 Das Suchbeispiel mit den Jasskarten kann mit einem sortierten Spiel
 fortgesetzt werden. Die SuS sollen in einer Gruppe diskutieren, wie am
-effizientesten nach einer Bestimmten Karte in einem sortierten Spiel
+effizientesten nach einer bestimmten Karte in einem sortierten Spiel
 gesucht wird. Vor dem Hintergrund der Besprechung der gewonnenen
 Erkenntnisse können dann die folgenden Aufgaben gelöst werden.
 
@@ -342,7 +339,7 @@ Tabelle für den gesuchten Wert 100:
 |5            | 15|  15| 15|   98|
 
 
-Durch ausprobieren kommt man im Maximum auf 5 Vergleiche.
+Durch Ausprobieren kommt man im Maximum auf 5 Vergleiche.
 
 ### Aufgabe
 
@@ -358,7 +355,7 @@ Elementen im Maximum 4 Vergleiche und bei einer solchen mit 32 Elementen
 ### Induktive Herleitung des Resultates
 
 Mit der binären Suche soll in einer aufsteigend sortierten Sequenz der
-Länge $n$ ein besetimmtes Element gefunden werden.
+Länge $n$ ein bestimmtes Element gefunden werden.
 
 Die Suche nach dem Element beginnt in der Mitte der gegebenen Sequenz.  
 
@@ -372,7 +369,7 @@ Fällen reduziert sich das Problem auf die Hälfte seiner ursprünglichen
 Grösse.  
 
 Das Problem wird bei jedem Vergleich halbiert, bis entweder das gesuchte
-Element gefunden worden ist, oder kein Element zum vergleichen mehr
+Element gefunden worden ist, oder kein Element zum Vergleichen mehr
 übrig ist. Im schlimmsten Fall sind $log_2(n) + 1$ Schritte erforderlich,
 um festzustellen, dass das gesuchte Element in der gegebenen Sequenz
 nicht vorkommt.  
