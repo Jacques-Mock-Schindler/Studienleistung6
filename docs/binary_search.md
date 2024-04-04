@@ -29,11 +29,14 @@ Werten gegenüber einer linearen Suche optimiert werden?
 
 4. Arbeitsblätter für die Klasse mit verständlichen Aufträgen (Rätsel,
    Aufgaben).  
-   Für die SuS wird ein Jupyter Notebook mit den Aufgaben zur Verfügung
+   Für die SuS wird ein 
+   [Jupyter Notebook](https://colab.research.google.com/github/Jacques-Mock-Schindler/Studienleistung6/blob/main/docs/binary_search_sus.ipynb) 
+   mit den Aufgaben zur Verfügung
    gestellt. 
 5. Lösungen, die auch für die Klasse verständlich sind, und die den
    Lösungsweg beschreiben und allfällige Erklärungen enthalten.  
-   Die Musterlösung wird für die SuS ebenfalls in einem Jupyter Notebook
+   Die Musterlösung wird für die SuS ebenfalls in einem 
+   [Jupyter Notebook](https://colab.research.google.com/github/Jacques-Mock-Schindler/Studienleistung6/blob/main/docs/binary_search_muloe.ipynb)
    zur Verfügung gestellt.
 6. Fazit: was man glaubt, erreicht zu haben.  
    Nach dieser Unterrichtssequenz kennen die SuS einen neuen, gegenüber
